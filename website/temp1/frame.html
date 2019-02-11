@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+     
+     
+<script>
+$(document).ready(function(){
+    $('.modal').modal();
+  })
+</script>
+ </head>
+
+<body> 
+<div class="container">
+
+  <a class="waves-effect waves-light darken-1 modal-trigger" href="#demo-modal"><?php echo '<img src="data:image/png;base64,'.base64_encode( $row['photo'] ).'"/>'; ?></a>
+
+<!-- This is the beginning of modal-->
+  <div id="demo-modal" class="modal">
+    <div class="modal-content">
+      <h4>A Demo of Simple Modal</h4>
+      <p>Content of the modal goes here. Place marketing text or other information here.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Close</a>
+    </div>
+  </div>
+    <!-- This is the end of modal-->
+</div>
+</body>   
+</html>
